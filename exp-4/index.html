@@ -11,7 +11,10 @@
           style="border: 2px solid black; width: 290px; margin: auto; padding: 10px;">
           <h1 align="center">Hotel Room Booking Form</h1>
 
+
         <!-- Name -->
+         <fieldset>
+            <legend><b>Personal Information</b></legend>
         <label for="fullname">Full Name:</label>
         <input type="text" id="fullname" name="fullname" required>
         <br><br>
@@ -25,6 +28,11 @@
         <label for="phone">Phone:</label>
         <input type="tel" id="phone" name="phone">
         <br><br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Booking Details</b></legend>
+        
+
 
         <!-- Check-in Date -->
         <label for="checkin">Check-in Date:</label>
@@ -47,8 +55,9 @@
 
         <!-- Number of Guests -->
         <label for="guests">Number of Guests:</label>
-        <input type="number" id="guests" name="guests">
+        <input type="number" id="guests" name="guests" min="1" max="10">
         <br><br>
+        </fieldset>
 
         <!-- Special Requests -->
         <label for="requests">Special Requests:</label>
