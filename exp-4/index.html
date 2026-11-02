@@ -47,9 +47,10 @@
         <!-- Room Type -->
         <label for="room">Room Type:</label>
         <select id="room" name="room">
-            <option>Single Room</option>
-            <option>Double Room</option>
-            <option>Deluxe Room</option>
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
+            <option value="suite">Suite</option>
+            <option value="deluxe">Deluxe Room</option>
         </select>
         <br><br>
 
@@ -58,17 +59,21 @@
         <input type="number" id="guests" name="guests" min="1" max="10">
         <br><br>
         </fieldset>
+        <fieldset>
+            <legend><b>Additional Requests</b></legend>
 
         <!-- Special Requests -->
         <label for="requests">Special Requests:</label>
         <br>
         <textarea id="requests" name="requests"
-                  rows="4" cols="30"></textarea>
+                  rows="4" cols="40"></textarea>
+        </fieldset>
         <br><br>
 
         <button type="submit">Book Now</button>
         <button type="reset">Reset Form</button>
 
     </form>
+    //action stores address of backend, method=get no security of data needed in search bar data is shown, method=post secure data doesnt show name in url 
 </body>
 </html>
