@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Page</title>
+</head>
+<body>
+
+  <!-- Skip link -->
+  <a href="#main">Skip to main content</a>
+
+  <!-- Navigation with ARIA label -->
+  <nav aria-label="Main navigation">
+    <a href="#">Home</a>
+    <a href="#">Help</a>
+  </nav>
+
+  <main id="main">
+    <!-- Proper heading -->
+    <h1>Accessible Page</h1>
+
+    <!-- Image with alt text -->
+    <img src="banner.jpeg" alt="Banner showing an accessible website" width="300" height="60">
+
+    <!-- Button with ARIA label -->
+    <button aria-label="Close">X</button>
+
+    <!-- Form field with label -->
+    <p>
+      <label for="search">Search:</label>
+      <input type="text" id="search">
+    </p>
+  </main>
+
+</body>
+</html>
